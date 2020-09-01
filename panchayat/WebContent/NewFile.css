@@ -1,0 +1,127 @@
+@CHARSET "ISO-8859-1";
+body{
+	margin: 0;
+	padding:0;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(tree.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.A{
+	width:90px;
+	height: 90px;
+	margin-top: 10px;
+}
+.B{
+	float: right;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color:white;
+	text-decoration: none;
+	padding: 8px;
+	border: 2px solid black;
+	margin-right: 74px;
+}
+li a:HOVER {
+	background-color: green;
+}
+.banner{
+	width: 750px;
+	height: 300px;
+	overflow: hidden;
+}
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.nav{
+	position: absolute;
+	bottom: 20px;
+	left:50%;
+	transform:translate(-50%);
+	display: flex;
+}
+.bar{
+	width: 50px;
+	height: 10px;
+	border: 2px solid black;
+	margin: 6px;
+	cursor: pointer;
+}
+.bar:HOVER{
+	background: green;
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+.images{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.image{
+	width: 20%;
+	transition:0.6s;
+}
+.image img{
+	width: 100%;
+	height: 100%;
+}
+#r1:CHECKED ~ .i1{
+	margin-left: 0;
+} 
+#r2:CHECKED ~ .i1{
+	margin-left: -20%;
+} 
+#r3:CHECKED ~ .i1{
+	margin-left: -40%;
+} 
+.notice{
+	width: 550px;
+	margin: 20px auto;
+	box-shadow: 1px 1px 10px 2px #333;
+	border-radius: 5px;
+	overflow: hidden; 
+	text-align: center;
+	
+}
+.note{
+	background-color: brown;
+	color: white;
+	padding: 10px 10px;
+}
+.move{
+	padding: 50px;
+	height: 300px;
+}
+.C{
+	padding-right: 80px;
+	padding-left: 80px;
+	width:150px;
+	height:200px;
+}
+.D{
+	
+	display: block;
+	color:white;
+	text-decoration: none;
+	padding: 8px;
+	border: 2px solid black;
+	margin-left: 80px;
+	margin-right:80px;
+	width: 130px;
+	text-align: center;
+	background-color: gray;
+	margin-bottom: 10px;
+}
